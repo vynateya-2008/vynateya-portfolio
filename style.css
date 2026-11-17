@@ -1,0 +1,308 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #081B2B;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+p {
+    color: #B8CAD5;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #102C40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.navbar h2 {
+    color: #19C6D2;
+    font-size: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #19C6D2;
+}
+
+/* Home Section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 500px;
+    background-color: #102C40;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome,
+.subtitle {
+    color: #19C6D2;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+.hero h1 span {
+    color: #19C6D2;
+}
+
+.hero h2 {
+    color: #D8F7F7;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+}
+
+.hero-card {
+    flex: 1;
+    text-align: center;
+    background-color: #173D53;
+    padding: 80px 20px;
+    border: 1px solid #23718A;
+    border-radius: 20px;
+}
+
+.hero-card h1 {
+    font-size: 75px;
+    color: #19C6D2;
+}
+
+/* About Section */
+
+.about-content {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.about-box,
+.education-box {
+    flex: 1;
+    background-color: #102C40;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #23516A;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+.education-box h3 {
+    color: #19C6D2;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+
+.skills-section {
+    background-color: #102C40;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #173D53;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #23516A;
+}
+
+.skill-card h2 {
+    color: #19C6D2;
+    font-size: 30px;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+}
+
+.skill-card:hover {
+    background-color: #20536B;
+}
+
+/* Learning Journey */
+
+.journey-section {
+    background-color: #102C40;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.journey-card {
+    background-color: #173D53;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.journey-card h2 {
+    color: #19C6D2;
+}
+
+/* Contact Section */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #19AEBB;
+    color: #081B2B;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #19C6D2;
+}
+
+.github-link {
+    display: inline-block;
+    color: #19C6D2;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #102C40;
+    padding: 30px;
+}
+
+footer h2 {
+    color: #19C6D2;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    section {
+        padding: 45px 5%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+}
